@@ -1,12 +1,44 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/member/member"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff5858",
     "navigationBarTitleText": "物折购",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#444",
+    "selectedColor": "#ff5858",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_click.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search_click.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "我的",
+        "iconPath": "images/member.png",
+        "selectedIconPath": "images/member_click.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000
+  },
+  "debug": true
 }
