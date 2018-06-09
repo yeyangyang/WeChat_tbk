@@ -2,57 +2,223 @@
 <view class="container">
   <!-- search -->
   <view class="search_box">
-    <form>
-      <button class="searchbtn" catchtap="searchActiveChangeclear" form-type="reset">
-        <icon type="clear" size="19" color="#aaa"></icon>
-      </button>
-      <view class="search__icon">
-        <icon type="search" size="13" color="#888"></icon>
-      </view>
-      <input type="text" class="search__input" placeholder="输入关键词搜索商品" />
-    </form>
+    <view class="search_warp">
+      <form bindsubmit="formSubmit">
+        <!-- reset_btn -->
+        <button class="reset_btn" plain="true" form-type="reset">
+          <icon type="clear" size="17" color="#aaa"></icon>
+        </button>
+        <!-- serch_btn -->
+        <button class="search_btn" plain="true" form-type="submit">
+          <icon type="search" size="17" color="#aaa"></icon>
+        </button>
+        <!-- serch_text -->
+        <input type="text" name="search" class="search__input" placeholder="输入关键词搜索商品" />
+      </form>
+    </view>
   </view>
   <!-- search -->
 
   <!-- banner -->
+  <!-- 一般常用的就是‘aspectFill’这个了 -->
   <view class="banner_box">
     <swiper indicator-dots="true" indicator-active-color="#ff5858" autoplay="true" interval="5000" duration="500">
       <swiper-item>
-        <image src="../../images/ceshi/banner.jpg" class="slide-image" width="355" height="170" />
+        <image src="https://image2.suning.cn/uimg/cms/img/152812017851027233.jpg" mode="aspectFill" />
       </swiper-item>
       <swiper-item>
-        <image src="../../images/ceshi/banner1.jpg" class="slide-image" width="355" height="170" />
+        <image src="https://image1.suning.cn/uimg/cms/img/152809770906529433.jpg?from=mobile" mode="aspectFill" />
       </swiper-item>
       <swiper-item>
-        <image src="../../images/ceshi/banner2.jpg" class="slide-image" width="355" height="170" />
+        <image src="https://image.suning.cn/uimg/aps/material/152818123741310944.jpg?from=mobile&from=mobile" mode="aspectFill" />
       </swiper-item>
     </swiper>
   </view>
   <!-- banner -->
-
+  <view class="clear_5"></view>
   <!-- nav -->
-  <view class="banner_box">
+  <view class="nav_box">
+    <swiper indicator-dots="true" indicator-active-color="#ff5858">
+      <!-- 第一页 -->
+      <swiper-item>
+        <ul>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>女装</text>
+            </navigator>
+          </li>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>男装</text>
+            </navigator>
+          </li>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>内衣</text>
+            </navigator>
+          </li>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>母婴</text>
+            </navigator>
+          </li>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>化妆品</text>
+            </navigator>
+          </li>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>居家</text>
+            </navigator>
+          </li>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>鞋包</text>
+            </navigator>
+          </li>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>美食</text>
+            </navigator>
+          </li>
+        </ul>
+      </swiper-item>
 
+      <!-- 第二页 -->
+      <swiper-item>
+        <ul>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>3</text>
+            </navigator>
+          </li>
+          <li>
+            <navigator hover-class="navigator-hover">
+              <image src="https://xqy.sulei.site/sulei/jiu2.png"></image>
+              <text>3</text>
+            </navigator>
+          </li>
+        </ul>
+      </swiper-item>
+    </swiper>
   </view>
   <!-- nav -->
 
-  <!-- shop_new -->
-  <view class="shop_new">
-
-  </view>
-  <!-- shop_new -->
-
-  <!-- shop_hot -->
-  <view class="shop_new">
-
-  </view>
-  <!-- shop_hot -->
+  <view class="clear_10" style="background-color:#eee;"></view>
 
   <!-- shop_show -->
   <view class="shop_show">
+    <!-- left -->
+    <view class="show_left">
+      <navigator hover-class="navigator-hover">
+        <image src="https://image.suning.cn/uimg/b2c/newcatentries/0000000000-000000000125039413_1.jpg?format=400h_400w_4e_80q.webp" mode="aspectFill"></image>
+      </navigator>
+    </view>
 
+    <!-- right -->
+    <view class="show_right">
+      <!-- top -->
+      <view class="show_top">
+        <navigator hover-class="navigator-hover">
+          <image src="http://gw.alicdn.com/imgextra/i1/114/TB2iEDIiXmWBuNjSspdXXbugXXa_!!114-2-lubanu.png_200x200q85s150.jpg" mode="aspectFill"></image>
+        </navigator>
+      </view>
+      <!-- bottom -->
+      <view class="show_bottom">
+        <navigator hover-class="navigator-hover">
+          <image src="https://gw.alicdn.com/tfscom/img.alicdn.com/imgextra/i3/903180008/TB2tACvkQ9WBuNjSspeXXaz5VXa_!!903180008-0-beehive-scenes.jpg" mode="aspectFill"></image>
+        </navigator>
+      </view>
+    </view>
   </view>
   <!-- shop_show -->
+
+  <view class="clear_10" style="background-color:#eee;"></view>
+
+  <!-- shop_new -->
+  <view class="shop_new">
+    <!-- title -->
+    <view class="new_title">
+      <view class="new_left">
+        <view class="icon">
+          <image src="../../images/new.png" mode="aspectFill"></image>
+        </view>
+        <text>今日上新</text>
+      </view>
+      <view class="new_right">
+        <navigator>
+          <text>更多</text>
+        </navigator>
+      </view>
+    </view>
+    <!-- content -->
+    <view class="new_content">
+      <scroll-view scroll-x="true">
+        <!--  display: inline-block-->
+        <ul>
+          <li>
+            <navigator>
+              <view class="img">
+                <view class="supply">
+                  <text>约补</text>
+                  <text>￥1.34</text>
+                </view>
+                <image src="https://img.alicdn.com/bao/uploaded/i2/TB1F3AUFVXXXXbNXXXXXXXXXXXX_!!0-item_pic.jpg_300x300q85s150.jpg_.webp" mode="aspectFill"></image>
+              </view>
+              <view class="title"><text>金星铁艺衣帽架落...</text></view>
+              <view class="price"><text>￥29.90</text><text>￥129.90</text></view>
+              <view class="get"></view>
+            </navigator>
+          </li>
+          <li>
+            <navigator></navigator>
+          </li>
+          <li style="background: red;">
+            <navigator></navigator>
+          </li>
+          <li style="background: green;">
+            <navigator></navigator>
+          </li>
+          <li style="background: red;">
+            <navigator></navigator>
+          </li>
+          <li style="background: green;">
+            <navigator></navigator>
+          </li>
+          <li style="background: red;">
+            <navigator></navigator>
+          </li>
+        </ul>
+      </scroll-view>
+
+    </view>
+  </view>
+  <!-- shop_new -->
+
+  <view class="clear_10" style="background-color:#eee;"></view>
+
+  <!-- advertising -->
+  <view class="advertising">
+    <image src="https://gw.alicdn.com/tps/i4/TB1Fijiv3aTBuNjSszfwu0gfpXa.png_970x970q75.jpg_.webp" mode="aspectFill"></image>
+  </view>
+  <!-- advertising -->
+  <view class="clear_10" style="background-color:#eee;"></view>
+
+  <!-- shop_hot -->
+  <view class="shop_hot">
+
+  </view>
+  <!-- shop_hot -->
 
   <!-- shop_list -->
   <view class="shop_list">

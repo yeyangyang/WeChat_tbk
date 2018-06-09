@@ -1,6 +1,7 @@
 /**app.wxss**/
 
 .container {
+  color: #333;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -8,4 +9,21 @@
   box-sizing: border-box;
   background: #fff;
   font-family: "微软雅黑";
+}
+.clear{
+  clear: both;
+  width: 100%;
+}
+.clear_5{
+  clear: both;
+  height: 10rpx;
+  width: 100%;
+}
+.clear_10{
+  clear: both;
+  height: 20rpx;
+  width: 100%;
+}
+.navigator-hover{
+  background-color: rgba(0, 0, 0, 0);
 }

@@ -1,15 +1,37 @@
 /**index.wxss**/
 
+/* banner */
+
 .banner_box {
   width: 100%;
+  height: 300rpx;
 }
+
+.banner_box swiper {
+  width: 100%;
+  height: 300rpx;
+}
+
+/* 一定要给图片设置宽高 */
 
 .banner_box image {
   width: 100%;
+  height: 300rpx;
 }
 
+/* banner */
+
+/* search */
+
 .search_box {
-  width: 100%;
+  background-color: #ff5858;
+}
+
+.search_box .search_warp {
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 90%;
   position: relative;
   clear: both;
   overflow: hidden;
@@ -17,7 +39,7 @@
   box-sizing: border-box;
 }
 
-.search_box .searchbtn {
+.search_box .reset_btn {
   background: none;
   position: absolute;
   border: none;
@@ -27,30 +49,249 @@
   width: 80rpx;
 }
 
-.search_box .searchbtn icon {
+.search_box .reset_btn icon {
   position: absolute;
   right: 20rpx;
-  top: 22rpx;
+  top: 15rpx;
   z-index: 5;
 }
 
-.search_box .search__icon {
+.search_box .search_btn {
+  background: none;
   position: absolute;
-  top: 0;
+  border: none;
   left: 0;
-  text-align: center;
-  height: 42px;
+  top: 0;
+  bottom: 0;
   width: 80rpx;
 }
 
-.search_box .search__icon icon {
-  margin-top: 15px;
-  display: block;
+.search_box .search_btn icon {
+  position: absolute;
+  left: 20rpx;
+  top: 15rpx;
+  z-index: 5;
 }
 
 .search_box .search__input {
-  width: 100%;
+  width: 85%;
   font-size: 12px;
-  height: 42px;
-  lighting-color: 42px;
+  height: 30px;
+  lighting-color: 30px;
+  color: #333;
 }
+
+/* search */
+
+/* nav */
+
+.nav_box {
+  width: 100%;
+  height: 330rpx;
+}
+
+.nav_box swiper {
+  height: 330rpx;
+}
+
+.nav_box swiper-item {
+}
+
+.nav_box swiper-item ul {
+}
+
+.nav_box swiper-item ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.nav_box swiper-item ul li navigator {
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+.nav_box swiper-item ul li navigator image {
+  width: 86rpx;
+  height: 86rpx;
+}
+
+.nav_box swiper-item ul li navigator text {
+  color: #666;
+  display: block;
+  font-size: 24rpx;
+}
+
+/* nav */
+
+/* show */
+
+.shop_show {
+  width: 100%;
+  height: 400rpx;
+}
+
+.shop_show .show_left {
+  width: 50%;
+  height: 400rpx;
+  float: left;
+}
+
+.shop_show .show_left image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.shop_show .show_right {
+  width: 50%;
+  height: 400rpx;
+  float: right;
+  background-color: #eee;
+}
+
+.shop_show .show_right .show_top {
+  width: 100%;
+  height: 195rpx;
+  float: left;
+  margin-bottom: 10rpx;
+}
+
+.shop_show .show_right .show_bottom {
+  width: 100%;
+  height: 195rpx;
+  float: left;
+}
+
+.shop_show .show_right .show_top image,
+.shop_show .show_right .show_bottom image {
+  width: 100%;
+  height: 195rpx;
+}
+
+/* show */
+
+/* advertising */
+
+.advertising {
+  width: 100%;
+  height: 200rpx;
+}
+
+.advertising image {
+  width: 100%;
+  height: 200rpx;
+}
+
+/* advertising */
+
+/* new */
+
+.shop_new {
+  width: 100%;
+  height: 600rpx;
+}
+
+.shop_new .new_title {
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  display: flex;
+}
+
+.shop_new .new_title .new_left {
+  width: 50%;
+  float: left;
+}
+
+.shop_new .new_title .new_left .icon {
+  display: flex;
+  width: 80rpx;
+  float: left;
+  margin-top: 10rpx;
+}
+
+.shop_new .new_title .new_left image {
+  display: flex;
+  height: 70rpx;
+  width: 90rpx;
+}
+
+.shop_new .new_title .new_left text {
+  color: #3889ff;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.shop_new .new_title .new_right {
+  width: 50%;
+  float: left;
+}
+
+.shop_new .new_title .new_right navigator {
+  width: 80rpx;
+  height: 90rpx;
+  float: right;
+}
+
+.shop_new .new_title .new_right text {
+  color: #999;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+
+.shop_new .new_content {
+  height: 510rpx;
+  width: 100%;
+}
+
+.shop_new .new_content scroll-view {
+  white-space: nowrap;
+  display: flex;
+}
+
+.shop_new .new_content scroll-view li {
+  width: 320rpx;
+  height: 500rpx;
+  display: inline-block;
+  margin:0 5rpx;
+  border:1px #eee solid; 
+}
+.shop_new .new_content scroll-view li navigator {
+ width: 100%;
+ height: 100%;
+}
+.shop_new .new_content scroll-view li .img {
+  width: 320rpx;
+  height: 320rpx;
+  display: flex;
+  float:left;
+  position: relative;
+}
+.shop_new .new_content scroll-view li .img image {
+  width: 320rpx;
+  height: 320rpx;
+  display: flex;
+  float:left;
+}
+.shop_new .new_content scroll-view li .img .supply {
+  position: absolute;
+  width: 128rpx;
+  height: 108rpx;
+  left: 0;
+  top: 0;
+  background: url('https://github.com/yeyangyang/WeChat_tbk/blob/master/images/discounts_icon.png') no-repeat;
+  background-size: 100% 100%; 
+}
+.shop_new .new_content scroll-view li .title {
+  float:left;
+}
+.shop_new .new_content scroll-view li .price {
+  float:left;
+}
+.shop_new .new_content scroll-view li .get {
+  float:left;
+}
+
+/* new */
