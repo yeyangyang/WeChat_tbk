@@ -210,6 +210,7 @@
   width: 80rpx;
   float: left;
   margin-top: 10rpx;
+  margin-left: 5rpx;
 }
 
 .shop_new .new_title .new_left image {
@@ -255,43 +256,505 @@
   width: 320rpx;
   height: 500rpx;
   display: inline-block;
-  margin:0 5rpx;
-  border:1px #eee solid; 
+  margin: 0 5rpx;
+  border: 1px #eee solid;
 }
+
 .shop_new .new_content scroll-view li navigator {
- width: 100%;
- height: 100%;
+  width: 100%;
+  height: 100%;
 }
+
 .shop_new .new_content scroll-view li .img {
   width: 320rpx;
   height: 320rpx;
   display: flex;
-  float:left;
+  float: left;
   position: relative;
 }
+
 .shop_new .new_content scroll-view li .img image {
   width: 320rpx;
   height: 320rpx;
   display: flex;
-  float:left;
+  float: left;
 }
+
 .shop_new .new_content scroll-view li .img .supply {
   position: absolute;
-  width: 128rpx;
-  height: 108rpx;
-  left: 0;
+  width: 100rpx;
+  height: 90rpx;
+  left: 4rpx;
   top: 0;
-  background: url('https://github.com/yeyangyang/WeChat_tbk/blob/master/images/discounts_icon.png') no-repeat;
-  background-size: 100% 100%; 
+  background: url('http://cs.300c.cn/yeyangyang/statics/images/discounts_icon.png') no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.8;
+  color: #fff;
 }
+
+.shop_new .new_content scroll-view li .img .supply text {
+  display: block;
+  font-size: 22rpx;
+  text-align: center;
+  margin: 4rpx 0;
+}
+
 .shop_new .new_content scroll-view li .title {
-  float:left;
+  float: left;
+  width: 300rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  padding: 0 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+
+.shop_new .new_content scroll-view li .title text {
+  overflow: hidden;
+  width: 300rpx;
+  color: #333;
+}
+
 .shop_new .new_content scroll-view li .price {
-  float:left;
+  float: left;
+  padding: 0 10rpx;
 }
+
+.shop_new .new_content scroll-view li .price text:first-child {
+  color: #ff5858;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.shop_new .new_content scroll-view li .price text:last-child {
+  color: #ccc;
+  font-size: 20rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+
 .shop_new .new_content scroll-view li .get {
-  float:left;
+  float: left;
+  width: 100%;
+  height: 80rpx;
+}
+
+.shop_new .new_content scroll-view li .get .get_warp_80 {
+  margin: 0 auto;
+  width: 80%;
+  height: 80rpx;
+  border: 1px solid #ff5858;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+
+.shop_new .new_content scroll-view li .get .get_top {
+  width: 100%;
+  height: 50%;
+  color: #fff;
+  background-color: #ff5858;
+}
+
+.shop_new .new_content scroll-view li .get .get_bottom {
+  width: 100%;
+  height: 50%;
+  color: #ff5858;
 }
 
 /* new */
+
+/* hot */
+
+.shop_hot {
+  width: 100%;
+  height: 600rpx;
+}
+
+.shop_hot .hot_title {
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  display: flex;
+}
+
+.shop_hot .hot_title .hot_left {
+  width: 50%;
+  float: left;
+}
+
+.shop_hot .hot_title .hot_left .icon {
+  display: flex;
+  width: 80rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+
+.shop_hot .hot_title .hot_left image {
+  display: flex;
+  height: 70rpx;
+  width: 70rpx;
+}
+
+.shop_hot .hot_title .hot_left text {
+  color: #22b68e;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.shop_hot .hot_title .hot_right {
+  width: 50%;
+  float: left;
+}
+
+.shop_hot .hot_title .hot_right navigator {
+  width: 80rpx;
+  height: 90rpx;
+  float: right;
+}
+
+.shop_hot .hot_title .hot_right text {
+  color: #999;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+
+.shop_hot .hot_content {
+  height: 510rpx;
+  width: 100%;
+}
+
+.shop_hot .hot_content scroll-view {
+  white-space: nowrap;
+  display: flex;
+}
+
+.shop_hot .hot_content scroll-view li {
+  width: 320rpx;
+  height: 500rpx;
+  display: inline-block;
+  margin: 0 5rpx;
+  border: 1px #eee solid;
+}
+
+.shop_hot .hot_content scroll-view li navigator {
+  width: 100%;
+  height: 100%;
+}
+
+.shop_hot .hot_content scroll-view li .img {
+  width: 320rpx;
+  height: 320rpx;
+  display: flex;
+  float: left;
+  position: relative;
+}
+
+.shop_hot .hot_content scroll-view li .img image {
+  width: 320rpx;
+  height: 320rpx;
+  display: flex;
+  float: left;
+}
+
+.shop_hot .hot_content scroll-view li .img .supply {
+  position: absolute;
+  width: 100rpx;
+  height: 90rpx;
+  left: 4rpx;
+  top: 0;
+  background: url('http://cs.300c.cn/yeyangyang/statics/images/discounts_icon.png') no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.shop_hot .hot_content scroll-view li .img .supply text {
+  display: block;
+  font-size: 22rpx;
+  text-align: center;
+  margin: 4rpx 0;
+}
+
+.shop_hot .hot_content scroll-view li .title {
+  float: left;
+  width: 300rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  padding: 0 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shop_hot .hot_content scroll-view li .title text {
+  overflow: hidden;
+  width: 300rpx;
+  color: #333;
+}
+
+.shop_hot .hot_content scroll-view li .price {
+  float: left;
+  padding: 0 10rpx;
+}
+
+.shop_hot .hot_content scroll-view li .price text:first-child {
+  color: #ff5858;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.shop_hot .hot_content scroll-view li .price text:last-child {
+  color: #ccc;
+  font-size: 20rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+
+.shop_hot .hot_content scroll-view li .get {
+  float: left;
+  width: 100%;
+  height: 80rpx;
+}
+
+.shop_hot .hot_content scroll-view li .get .get_warp_80 {
+  margin: 0 auto;
+  width: 80%;
+  height: 80rpx;
+  border: 1px solid #ff5858;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+
+.shop_hot .hot_content scroll-view li .get .get_top {
+  width: 100%;
+  height: 50%;
+  color: #fff;
+  background-color: #ff5858;
+}
+
+.shop_hot .hot_content scroll-view li .get .get_bottom {
+  width: 100%;
+  height: 50%;
+  color: #ff5858;
+}
+
+/* new */
+
+/* like */
+
+.shop_list {
+  width: 100%;
+}
+
+.shop_list .list_title {
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  display: flex;
+}
+
+.shop_list .list_title .list_left {
+  width: 50%;
+  float: left;
+}
+
+.shop_list .list_title .list_left .icon {
+  display: flex;
+  width: 80rpx;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+
+.shop_list .list_title .list_left image {
+  display: flex;
+  height: 70rpx;
+  width: 70rpx;
+}
+
+.shop_list .list_title .list_left text {
+  color: #ff5858;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.shop_list .list_title .list_right {
+  width: 50%;
+  float: left;
+}
+
+.shop_list .list_title .list_right navigator {
+  width: 80rpx;
+  height: 90rpx;
+  float: right;
+}
+
+.shop_list .list_title .list_right text {
+  color: #999;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+
+.shop_list .list_content {
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.shop_list .list_content li {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx; 
+  margin-right: 10rpx; 
+  width: 341rpx;
+  height: 525rpx;
+  display: inline-block;
+  float: left;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+.shop_list .list_content li:nth-child(2n) {
+  margin-right: 0rpx; 
+  margin-left: 10rpx; 
+}
+
+.shop_list .list_content li navigator {
+  width: 100%;
+  height: 100%;
+}
+
+.shop_list .list_content li .img {
+  width: 340rpx;
+  height: 340rpx;
+  display: flex;
+  float: left;
+  position: relative;
+}
+
+.shop_list .list_content li .img image {
+  width: 340rpx;
+  height: 340rpx;
+  display: flex;
+  float: left;
+}
+
+.shop_list .list_content li .img .supply {
+  position: absolute;
+  width: 100rpx;
+  height: 90rpx;
+  left: 4rpx;
+  top: 0;
+  background: url('http://cs.300c.cn/yeyangyang/statics/images/discounts_icon.png') no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.shop_list .list_content li .img .supply text {
+  display: block;
+  font-size: 22rpx;
+  text-align: center;
+  margin: 4rpx 0;
+}
+
+.shop_list .list_content li .title {
+  float: left;
+  font-size: 26rpx;
+  padding: 0 10rpx;
+  margin-top: 10rpx;
+  overflow: hidden;
+  height: 76rpx;
+}
+
+.shop_list .list_content li .title text {
+  overflow: hidden;
+  color: #666;
+}
+
+.shop_list .list_content li .price {
+  float: left;
+  margin: 0 10rpx;
+  width: 320rpx;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10rpx;
+}
+
+.shop_list .list_content li .price text:first-child {
+  color: #ccc;
+  font-size: 23rpx;
+  display: flex;
+  float: left;
+}
+
+.shop_list .list_content li .price text:last-child {
+  color: #ccc;
+  display: flex;
+  font-size: 23rpx;
+  margin-left: 20rpx;
+  float: right;
+}
+
+.shop_list .list_content li .get {
+  float: left;
+  margin: 0 10rpx;
+  width: 320rpx;
+  padding-top: 10rpx;
+}
+
+.shop_list .list_content li .get .get_warp_80 {
+
+}
+
+.shop_list .list_content li .get .get_warp_80_L {
+  display: flex;
+  float: left;
+}
+.shop_list .list_content li .get .get_warp_80_L text:first-child{
+  color: #ccc;
+  display: flex;
+  font-size: 23rpx;
+}
+.shop_list .list_content li .get .get_warp_80_L text:last-child{
+  color: #ff5858;
+  display: flex;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+.shop_list .list_content li .get .get_warp_80_R {
+  float: right;
+  display: flex;
+}
+.shop_list .list_content li .get .get_warp_80_R text:first-child {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  background-color: #ff5858;
+  border-bottom-left-radius: 6rpx;
+  border-top-left-radius: 6rpx;
+  font-size: 25rpx;
+  color: #fff;
+  font-weight: bold;  
+}
+.shop_list .list_content li .get .get_warp_80_R text:last-child {
+  display: inline-block;
+  width: 60rpx;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;  
+  font-size: 22rpx;
+  color: #ff5858;
+  border: 1px solid #ff5858;  
+  border-bottom-right-radius: 6rpx;
+  border-top-right-radius: 6rpx;  
+}
+
+/* like */

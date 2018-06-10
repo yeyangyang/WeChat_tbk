@@ -1,5 +1,4 @@
 /**app.wxss**/
-
 .container {
   color: #333;
   height: 100%;
